@@ -1,9 +1,10 @@
 body {
     background-color: rgb(3, 12, 59);
+    font-family: 'Lato', sans-serif;
 }
 
 #body {
-    width: 70%;
+    width: 75%;
     background-color: white;
     text-align: center;
     border: rgb(156,158,174) solid 1px;
@@ -13,4 +14,57 @@ body {
 
 #tag-line-container {
     border-bottom: rgb(247,248,249) solid 1px;
+    padding: 10px;
+}
+
+.plan-type {
+    text-transform: uppercase;
+}
+
+.plan-price {
+    color: rgb(64,155,238)
+}
+
+.plan-price span {
+    font-size: 130%;
+}
+
+.plan-widgets {
+    text-transform: uppercase;
+}
+
+#plan-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.plan {
+    width: 33%;
+    height: 400px;
+    display: inline-block;
+    border-right: rgb(247,248,249) solid 1px;
+    margin: auto;
+    position: relative;
+}
+
+#right-plan {
+    border-right: 0;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(64,155,238);
+    outline: 0;
+}
+
+.active {
+    color: rgb(64,155,238);
+    background-color: white;
+    border: rgb(64,155,238) 1px solid;
 }
