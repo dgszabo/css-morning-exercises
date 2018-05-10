@@ -27,6 +27,7 @@ body {
 #highlighted-text {
     background-color: rgb(26,169,39);
     padding: 3px;
+    padding-right: 4px;
     cursor: pointer;
     position: relative;
 }
@@ -42,6 +43,7 @@ body {
     flex-direction: column;
     font-size: 50%;
     border-radius: 5px;
+    pointer-events: none;
 }
 
 #highlighted-text:hover > #joke-explainer {
