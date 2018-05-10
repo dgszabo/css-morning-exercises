@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom right, rgb(231,37,100), rgb(255,225,251));
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.joke-container {
+    position: absolute;
+    left: 25vw;
+    top: 40vh;
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+#highlighted-text {
+    background-color: rgb(26,169,39);
+    padding: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+#joke-explainer {
+    position: absolute;
+    width: 600%;
+    opacity: 0;
+    transition-duration: 1s;
+    bottom: 400%;
+    left: -250%;
+    display: flex;
+    flex-direction: column;
+    font-size: 50%;
+    border-radius: 5px;
+}
+
+#highlighted-text:hover > #joke-explainer {
+    opacity: 1;
+    background-color: rgb(26,169,39);
+    bottom: 140%;
+}
+
+.joke-explainer-title {
+    background-color: rgb(63,253,80);
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.joke-explainer-body {
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+.smileys {
+    font-size: 250%;
+}
+
+.arrow {
+    position: absolute;
+    bottom: -10px;
+    left: 45%;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(26,169,39);
+    }
+}
